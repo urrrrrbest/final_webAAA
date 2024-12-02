@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>澳門城市大學 國際培訓與測試中心 (International Training and Testing Center, ITTC)</title>
+    
+    <link rel="shortcut icon" href="favicon.ico"><!--引入icon图标-->
+    <link rel="stylesheet" href="base.css"><!--引入初始化css文件-->
+    <link rel="stylesheet" href="common.css"><!--引入header样式-->
+    <link rel="stylesheet" href="footer.css"><!--引入footer样式-->
+    <script type="text/javascript" src="header.js"></script><!--引入header js文件-->
+    <script type="text/javascript" src="footer.js"></script><!--引入footer js文件-->
+
+    <!--引入下拉菜单css-->
+    <link type="text/css" rel="stylesheet" href="font-awesome.min.css">
+    <script src="template/default/js/vendor/jquery.min.js"></script><!--引入下拉菜单 js-->
+    <script src="template/default/js/vendor/modernizr.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="slide.css"><!--滚动-->
+	<script type="text/javascript" src="slide.js"></script>
+   
+    <link type="text/css" rel="stylesheet" href="section.css"><!--右侧-->
+
+    <!--中心简介css-->
+    <link type="text/css" rel="stylesheet" href="introdcution.css">
+</head>
+
+
+<body>
+    <div class="head">
+        <!--头部文件start-->
+        <header>
+            <!--start-->
+            <div class="border">
+                <div class="container">
+                    <!--左侧图片start-->
+                    <div class="logo">
+                        <!--点击图片返回页面，鼠标放在图片上出现文字提示-->
+                        <a href="index.html" title="澳門城市大學 國際培訓與測試中心 (International Training and Testing Center, ITTC)">
+                            <img src="logo.png">
+                        </a>
+                    </div>
+                    <!--左侧图片end-->
+
+                    <!--右侧start-->
+                    <div class="right">
+                        <!--用微信联络-->
+                        <div class="right-left">
+                            <a href="wechat_code.png" onclick="openModal()"><!--js 弹窗-->
+                                <img src="wechat-01.png">
+                                用微信聯絡
+                                <div id="modal" style="display: none;">
+                                    <div class="modal-content">
+                                        <span onclick="closeModal()"></span>
+                                        <img src="wechat_code.png">
+                                    </div>
+                                </div>    
+                            </a>
+                        </div>
+                         <!--language-->
+                        <div class="right-right">
+                            <button id="dropdownButton" class="dropdown-button">
+                                <img src="language.png">
+                                LANGUAGE
+                            </button>
+                            <ul id="dropdownMenu" class="dropdown-first">
+                                <li class="dropdown-item">繁</li>
+                                <li class="dropdown-item">简</li>
+                            </ul>
+                        </div>
+                        <!--社交媒体-->
+                        <div class="right-button">
+                            <ul>
+                                <!--facebook-->
+                                <li>
+                                    <a href="https://www.facebook.com/CityUMacau" target="_blank">
+                                        <img src="facebook-logo1.png" alt="facebook">
+                                    </a>
+                                </li>
+                                <!--ins-->
+                                <li>
+                                    <a href="https://www.instagram.com/cityuofmacau/" target="_blank">
+                                        <img src="ins-logo1.png" alt="ins">
+                                    </a>
+                                </li>
+                                <!--youtube-->
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCpNuq5WG42_CHpfkzpdNZsA/videos" target="_blank">
+                                        <img src="youtube-logo1.png" alt="youtube">
+                                    </a>
+                                </li>
+                                <!--weibo-->
+                                <li>
+                                    <a href="https://www.weibo.com/u/3488388311" target="_blank">
+                                        <img src="weibo-logo1.png" alt="weibo">
+                                    </a>
+                                </li>
+
+                                <!--youku-->
+                                <li>
+                                    <a href="https://i.youku.com/i/UNjE5MTI1MzE4OA==?spm=a2h0j.11185381.module_basic_sub.A" target="_blank">
+                                        <img src="youku-logo1.png" alt="youku">
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <!-- 微信图标 -->
+                                    <a href="wechat-QRcode.png" onclick="openModal()">
+                                        <img id="wechat-icon" src="weixin-logo1.png">
+                                        <div id="modal" style="display: none;">
+                                            <div class="modal-content">
+                                                <span onclick="closeModal()"></span>
+                                                <img src="wechat-QRcode.png">
+                                            </div>
+                                        </div>
+                                    </a>    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-box">
+                    <div class="grid-container">
+                      <nav id="main-nav">
+                        <ul>
+                          <li class="active"><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html" class="">首頁</a></li>
+                          <li class=""><a href="javascript:void(0)" class="dropdown">中心 <i class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                              <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">中心簡介</a></li>
+                              <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">中心人員</a></li>
+                              <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">聯絡我們</a></li>
+                            </ul>
+                          </li>
+                          <li class=""><a href="javascript:void(0)" class="dropdown">研學專案項目 <i class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                              <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">短期專業研修項目</a></li>
+                            </ul>
+                          </li>
+                          <li class=""><a href="javascript:void(0)" class="dropdown">國際認證及專業培訓課程<i class="caret"></i></a>
+                            <ul class="dropdown-menu">
+                              <li class="dropdown-submenu"><a href="javascript:void(0)" class="">國際認證培訓課程<i class="arrow"></i></a>
+                                <ul class="dropdown-menu">
+                                  <li class="menu-content"><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">ACE_營養與運動國際認證課程</a></li>
+                                  <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">清酒侍酒師和波爾多葡萄酒專業證書課程</a></li>
+                                  <li class=""><a href="https://ittc.cityu.edu.mo/list-104" class="">WSET®葡萄酒資格認證課程</a></li>
+                                  <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html" class="">專業手沖咖啡入門課程</a></li>
+                                  <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">營養與皮膚護理證書課程</a></li>
+                                  <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">曼陀羅療癒藝術課程</a></li>
+                                </ul>
+                              </li>
+                              <li class=" dropdown-submenu"><a href="javascript:void(0)" class="">專業在職培訓課程<i class="arrow"></i></a>
+                                      <ul class="dropdown-menu">
+                                        <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">澳門金融學會</a></li>
+                                        <li class=""><a href=" https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html " class="">澳門教育及青年發展局-教師培訓課程</a></li>
+                                        <li class=""><a href="https://ittc.cityu.edu.mo/list-77" class="">澳門社會工作局持續進修課程</a></li>
+                                        <li class=""><a href="https://ittc.cityu.edu.mo/gaming-course" class="">澳門幸運博彩業職工總會培訓課程</a></li>
+                                        <li class=""><a href="https://ittc.cityu.edu.mo/dsal-courses" class="">澳門勞工事務局-就業導向帶津培訓計劃 (已於2023年12月結束相關培訓)</a></li>
+                                      </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class=""><a href="javascript:void(0)" class="dropdown">國際英語考試及培訓 <i class="caret"></i></a>
+                                <ul class="dropdown-menu">
+                                  <li class="dropdown-submenu"><a href="javascript:void(0)" class="">英語考試系列<i class="arrow"></i></a>
+                                    <ul class="dropdown-menu">
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/page-95" class="">ACT</a></li>
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/list-63" class="">ETS_TOEIC (托業)</a></li>
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/list-74" class="">ETS_TOEFL (托福)</a></li>
+                                      <li class="t"><a href="https://ittc.cityu.edu.mo/list-73" class="">IELTS (雅思)</a></li>
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/page-84" class="">SAT</a></li>
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/business-translation" class="">全國商務外語翻譯考試(BETT)</a></li>
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/list-26" class="">全國大學英語四、六級考試(CET)</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="dropdown-submenu"><a href="javascript:void(0)" class="">英語培訓系列<i class="arrow"></i></a>
+                                    <ul class="dropdown-menu">
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/page-155" class="">English Language Test Preparation Course - Level 1</a></li>
+                                      <li class=""><a href="https://ittc.cityu.edu.mo/page-157" class="">English Language Test Preparation Course - Level 2</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class=""><a href="https://ittc.cityu.edu.mo/page-137" class="menu-content">教青局持續進修發展計劃</a></li>
+                              <li class=""><a href="https://ittc.cityu.edu.mo/graduate_search" class="menu-content">前公開學院</a></li>
+                            </ul>
+                      </nav>
+                    </div>
+                    <!--grid-container-->
+                  </div>
+                  <!--menu-box-->
+                </div>        
+    
+        </header>
+    </div>
+    <!--头部文件end-->
+
+    <div class="content">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <a href="https://urrrrrbest.github.io/p1/n1.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/54ec9a4abd6f595322a49697e9abc500_1920X1920.png" alt="Image 1"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/4048e37676c51dea43e6b9b7683493b7_1920X1920.gif" alt="Image 2"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/85ede9c1378e057d0af416e1fc3c804c_1920X1920.gif" alt="Image 3"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/46244ccb1545faf0cfe3fe70ca453f88_1920X1920.jpg" alt="Image 4"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/5985cc0b40e3cd2f0fe3dac4971eb0ca_1920X1920.png" alt="Image 5"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/ea915c267de01cdd555cb599cd9badb9_1920X1920.png" alt="Image 6"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/74f14c53ea5d8f517ae5a8b567372b94_1920X1920.png" alt="Image 7"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/dac48ceccc4c066344cb598eff47121d_1920X1920.png" alt="Image 8"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/0000fcb66699284fb1ee3cf57292ecf8_1920X1920.png" alt="Image 9"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/f3688928ca1f3c7446e6c9573bed3a4b_1920X1920.gif" alt="Image 10"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/2131d053999419c6e3ffb02bba27986a_1920X1920.png" alt="Image 11"></a>
+                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html"><img src="https://ittc.cityu.edu.mo/uploads_thumb/plugins/9f685586d41d44bb949b85d6f67b47a8_1920X1920.png" alt="Image 12"></a>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            <div class="carousel-indicators">
+                <span class="indicator" onclick="goToSlide(0)"></span>
+                <span class="indicator" onclick="goToSlide(1)"></span>
+                <span class="indicator" onclick="goToSlide(2)"></span>
+                <span class="indicator" onclick="goToSlide(3)"></span>
+                <span class="indicator" onclick="goToSlide(4)"></span>
+                <span class="indicator" onclick="goToSlide(5)"></span>
+                <span class="indicator" onclick="goToSlide(6)"></span>
+                <span class="indicator" onclick="goToSlide(7)"></span>
+                <span class="indicator" onclick="goToSlide(8)"></span>
+                <span class="indicator" onclick="goToSlide(9)"></span>
+                <span class="indicator" onclick="goToSlide(10)"></span>
+                <span class="indicator" onclick="goToSlide(11)"></span>
+            </div>
+        </div>
+        <div class="section"> <!-- New div -->
+            <div class="left-section">
+                <div class="row">
+                    <div class="item">
+                        <a href=" ">
+                            <img src="https://ittc.cityu.edu.mo/uploads/theme/5d05b6e1eca82d89c140075d45669604.png"/>
+                            <br>
+                            現在招生課程
+                        </a >
+                    </div>
+                    <div class="item">
+                        <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">
+                            <img src="https://ittc.cityu.edu.mo/uploads/theme/5bc10eaac6ccc097ace26eb1c81d18b0.jpeg"/>
+                            短期研學培訓專案
+                        </a >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">
+                            <img src="https://ittc.cityu.edu.mo/uploads/theme/c2baf8142a0c8f807f6158066fdc0984.png"/>
+                            <br>
+                            2024年12月CET4&6報名
+                        </a >
+                    </div>
+                    <div class="item">
+                        <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">
+                            <img src="https://ittc.cityu.edu.mo/uploads/theme/366b783f89ea15d17abd4ee0b727c9ec.jpeg"/>
+                            國際英語考試
+                        </a >
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="top-row">
+                    <span>最新消息</span>
+                    <span>活动及讲座日程</span>
+                </div>
+                <div class="list-layout">
+                    <div class="grid-100">
+                        <div class="notice-box">
+                            <span class="date">
+                                <div class="month">11</div>
+                                <div class="year">2024</div>
+                            </span>
+                            <div class="title">
+                                <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">SSA清酒入門課：品味日式清酒文清酒文化精髓</a >
+                                </div>
+                            </div><!--notice-box-->
+                            <div class="notice-box">
+                                <span class="date">
+                                    <div class="month">11</div>
+                                    <div class="year">2024</div>
+                                </span>
+                                <div class="title">
+                                    <a href=" ">新華學院赴澳城大研修交流團：跨境學習之旅，塑造財商會計新銳</a >
+                                </div>
+                            </div><!--notice-box-->
+                            <div class="notice-box">
+                                <span class="date">
+                                    <div class="month">11</div>
+                                    <div class="year">2024</div>
+                                </span>
+                                <div class="title">
+                                    <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">廣州華商學院赴澳城大研修培訓，創新共融中探索商業模式</a >
+                                </div>
+                            </div><!--notice-box-->
+                            <div class="notice-box">
+                                <span class="date">
+                                    <div class="month">10</div>
+                                    <div class="year">2024</div>
+                                </span>
+                                <div class="title">
+                                    <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">廣州華商學院師生走進澳城大，了解澳門世界文化遺產與城市發展</a >
+                                </div>
+                            </div><!--notice-box-->
+                            <div class="notice-box">
+                                <span class="date">
+                                    <div class="month">09</div>
+                                    <div class="year">2024</div>
+                                </span>
+                                <div class="title">
+                                    <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">馬來西亞華文獨立中學學生遊學團開班儀式在澳城大舉行</a >
+                                    </div>
+                                </div><!--notice-box-->
+                            </div><!--grid-100-->
+                            <div class="clear"></div>
+                        </div><!--list-layout-->
+                        <div class="clear"></div>
+                        <a href=" " class="view-more">查看其它</a > 
+                    </div><!--right-section-->
+                </div><!--section -->
+                                
+        
+            
+            </div> 
+        </div>
+    </div><!--content end-->
+
+    <div class="index-about">
+        <div class="index-title-text-center"><span>中心簡介</span></div>
+        <div class="list-layout">
+          <div class="grid-100 grid-parent">
+            <div class="grid-50">
+              <video src="https://ittc.cityu.edu.mo/template/default/img/index-video.mp4" controls="controls" width="100%" height="370"class="index-video" poster="template/default/img/index-video-cover.png"></video>
+            </div>
+            <!--grid-50-->
+            <div class="grid-50">
+              <article class="enter-content">
+                <p><img src="https://ittc.cityu.edu.mo/uploads/ueditor/image/20220722/1658471568726734.png" width="100%" height="370" title="right picture.png" alt="nakahara" /></p>
+              </article>
+              <div class="statistics hidden">
+                <div class="grid-100 mobile-grid-100 grid-parent">
+                  <div class="grid-33 mobile-grid-33 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <div class="num"><span class="number number-animate">3241</span>人</div>
+                    <div class="title">已培訓人數</div>
+                  </div>
+                  <!--grid-33-->
+                  <div class="grid-33 mobile-grid-33 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                    <div class="num"><span class="number number-animate">2758</span>人</div>
+                    <div class="title">考生人數</div>
+                  </div>
+                  <!--grid-33-->
+                  <div class="grid-33 mobile-grid-33 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                    <div class="num"><span class="number number-animate">403</span>人</div>
+                    <div class="title">交流培訓人數</div>
+                  </div>
+                  <!--grid-33-->
+                </div>
+                <!--grid-100-->
+              </div>
+              <!--statistics-->
+            </div>
+            <!--grid-50-->
+          </div>
+          <!--grid-100-->
+        </div>
+        <!--list-layout-->
+      </div>
+      <!--index-block-->
+      </div>
+      <!--grid-container-->
+      </div>
+      <!--content-->
+    
+        <!--底部文件start-->
+    <div class="footer-container">
+        <div class="footer-logo">
+               <img src="footer-logo.svg">
+               <ul>
+                   <li>
+                       <a href="https://www.facebook.com/CityUMacau" target="_blank">
+                           <img src="facebook-footer.png" alt="facebook">
+                       </a>
+                   </li>
+    
+    
+                   <li>
+                       <a href="https://www.instagram.com/cityuofmacau/" target="_blank">
+                           <img src="ins-footer.png" alt="ins">
+                       </a>
+                   </li>
+    
+    
+                   <li>
+                       <a href="https://www.youtube.com/channel/UCpNuq5WG42_CHpfkzpdNZsA/videos" target="_blank">
+                           <img src="youtub-footer.png" alt="youtube">
+                       </a>
+                   </li>
+    
+    
+                   <li>
+                       <a href="https://www.weibo.com/u/3488388311" target="_blank">
+                           <img src="weibo-footer.png" alt="weibo">
+                       </a>
+                   </li>
+    
+    
+                   <li>
+                       <a href="https://i.youku.com/i/UNjE5MTI1MzE4OA==?spm=a2h0j.11185381.module_basic_sub.A" target="_blank">
+                           <img src="youku-footer.png" alt="youku">
+                       </a>
+                   </li>
+    
+                   <li>
+                       <a href="wechat-QRcode.png" onclick="openModal()">
+                           <img id="wechat-icon" src="weixin-footer.png">
+                           <div id="modal" style="display: none;">
+                               <div class="modal-content">
+                                   <span onclick="closeModal()"></span>
+                                   <img src="wechat-QRcode.png">
+                               </div>
+                           </div>
+                       </a>
+                   </li>  
+               </ul>
+        </div>
+        <div class="footer-contact">
+               <p>地址：澳門新口岸冼星海大馬路81-121號金龍中心4樓</p>
+               <p>電話：(853) 8590-2222 / 8590-2542</p>
+               <p>傳真：(853) 2875-5718</p>
+               <p>電子郵箱：ittc@cityu.edu.mo</p>
+        </div>
+        <div class="footer-middle">
+               <div class="footer-title">
+               快速連結
+           </div>
+           <div class="middle-link">
+               <div class="footer-middle-left">
+                   <p>
+                       <a href="https://ittc.cityu.edu.mo/about">
+                           <span>中心簡介</span>
+                       </a>
+                   </p>
+                   <p>
+                       <a href="https://ittc.cityu.edu.mo/team">
+                           <span>中心團隊</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://ittc.cityu.edu.mo/news">
+                           <span>最新消息</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://ittc.cityu.edu.mo/notice">
+                           <span>公告</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://ittc.cityu.edu.mo/contact">
+                           <span>聯絡我們</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://cityu.edu.mo/zh/">
+                           <span>澳門城市大學首頁</span>
+                       </a>
+                   </p>
+               </div>
+               <div class="footer-middle-right">
+                   <p>
+                       <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">
+                           <span>專業認證課程</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">
+                           <span>短期研學培訓專案</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://ittc.cityu.edu.mo/courses-2">
+                           <span>金融學會課程</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://oi.cityu.edu.mo/graduate_search">
+                           <span>DSEDJ持續進修計劃</span>
+                       </a>
+                   </p>
+    
+                   <p>
+                       <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html">
+                           <span>學藉查詢(公開學院)</span>
+                       </a>
+                   </p>
+               </div>
+           </div>
+        </div>
+        <div class="footer-right">
+           <div class="footer-title">
+           認證考試
+            </div>
+            <div class="right-text">
+           <p>
+               <a href="https://ittc.cityu.edu.mo/list-26" target="_self">全國大學英語四、六級考試（CET）</a>
+           </p>
+    
+           <p>
+               <a href="https://ittc.cityu.edu.mo/list-73" target="_self">雅思 (IELTS)</a>
+           </p>
+    
+           <p>
+               <a href="https://ittc.cityu.edu.mo/list-63" target="_self">TOEIC</a>
+           </p>
+    
+           <p>
+               <a href="https://ittc.cityu.edu.mo/list-74" target="_self">托福網路測驗(TOEFL iBT®)&nbsp;</a>
+           </p>
+    
+           <p>
+               <a href="https://urrrrrbest.github.io/BITA_end_of_period/end_of_period.html" target="_self">
+                   <span style="text-decoration: none;">SAT &amp; ACT</span>
+               </a>
+           </p>
+    
+           <p>
+               <a href="https://ittc.cityu.edu.mo/business-translation" target="_self">全國商務外語翻譯考試（BETT）</a>
+           </p>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">© 2024 澳門城市大學 國際培訓與測試中心</div>
+</body>    
+</html>  
+       
+
+
+
+
+
+
+
+
+
+        
+   

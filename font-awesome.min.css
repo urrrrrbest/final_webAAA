@@ -1,0 +1,203 @@
+.menu-box {
+    background-color: #0F3365;
+    border: 0px solid #ddd;/* 边框 */
+    font-family: "黑体";
+    font-size: 14px;
+    line-height: 18px;
+    color: #000; 
+    width: 120%;
+    height: 50px;
+    padding-left: 110px;
+}
+
+.grid-container {
+    width: 120%;
+    padding-left: 0;
+    padding-right: 0;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* 相对定位，用于子菜单定位 */
+}
+
+#main-nav {
+    width: 120%;   
+}
+
+.menu-content {
+    color: #fff;
+}
+
+.dropdown-menu{
+    list-style: none; /* 去掉圆点 */
+    padding: 0; /* 去掉默认内边距 */
+    margin: 0; /* 去掉默认外边距 */
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    list-style: none; /* 去除列表样式 */
+}
+
+.grid-container ul li {
+            margin-right: 0; /* 列表项之间的间距 */
+            display: inline-block;/* 列表项横向排列 */
+            
+            zoom: 1;
+            text-align: -webkit-match-parent;
+            unicode-bidi: isolate;
+            position: relative; /* 为子菜单提供绝对定位的参考 */
+        }
+
+.grid-container ul li:hover >.dropdown-menu {
+  display: block; /* 悬停时显示下拉菜单 */
+  }
+
+.dropdown-menu li a {
+    text-decoration: none; /* 去掉下划线 */
+    color: inherit; /* 使颜色与父元素一致 */
+    display: block;
+    padding: 15px 20px;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+nav>ul>li>a {
+    display: block; /* 使链接占满整个列表项 */
+    text-decoration: none; /* 去除下划线 */
+    font-size: 16px;
+    display: block;
+    padding: 15px 20px;/*内边距*/
+}
+
+.active{
+margin-top:8px;
+margin:2px
+}
+
+ nav>ul>li.active>a {
+    background-color: #FAA61F;
+    text-decoration: none;
+    color: #fff;/*设置首页这个字的颜色*/
+}
+.dropdown {
+ position: relative;
+ margin-top:8px;
+ margin:2px;
+ color: #fff;
+}
+/* 隐藏下拉菜单 */
+.dropdown-menu {
+        position: absolute;/* 绝对定位 */
+        top: 100%;/* 垂直方向位置在父级下方 */
+        left: 0;/* 水平方向左对齐 */
+        z-index: 1000;/* 确保下拉菜单在其他元素之上 */
+        display: none;/*默认隐藏子菜单*/
+        float: left;
+        min-width: 200px;
+        padding: 0;
+        margin: 0;/*确保子菜单对其*/
+        list-style: none;
+        background-color: #fff;/* 背景色 */
+        background-clip: padding-box;
+        text-align: left;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc; /* 边框 */
+    }
+    .dropdown-menu > li {
+        position: relative;
+        width: 200px; /* 子菜单宽度 */
+        padding: 0px; /* 内边距 */
+        border-bottom: 1px solid #ccc; /* 分隔线颜色 */
+    }
+.dropdown-menu >li >a {
+  display: block; /* 让链接占据整个区块 */
+}
+    .dropdown-menu>li>a {
+        display: block;
+        padding: 15px;
+        clear: both;
+        font-weight: normal;
+        line-height: 20px;
+        color: #0F3365;
+        white-space: normal;
+    }
+/* 子菜单的子菜单样式 */
+.dropdown-submenu >.dropdown-menu {
+    left: 100%; /* 将子菜单放在右边 */
+    top: 0; /* 与父菜单项对齐 */
+}
+.caret {
+        margin-top: -2px; /* 向上移动箭头 */
+        margin-left: 2px;
+        display: inline-block; /* 使元素表现为行内块元素，允许设置宽高 */
+        width: 0; /* 宽度为 0，通常用于纯图形的元素 */
+        height: 0; /* 高度为 0，通常用于纯图形的元素 */
+        border-top: 4px solid #000; /* 顶部边框为 4px 的黑色实线，形成一个三角形的顶部 */
+        vertical-align: middle; /* 设置垂直对齐为中间 */
+        border-right: 4px solid transparent; /* 右边框为 4px 的透明边框 */
+        border-left: 4px solid transparent; /* 左边框为 4px 的透明边框 */
+        content: ""; /* 该属性在此处没有实际作用，因为它通常用于伪元素（如 ::before 和 ::after） */
+    }
+header nav>ul>li>a >.caret {
+    border-top-color: #fff !important;/*设置图标点颜色*/
+}
+.dropdown-submenu {
+  position: relative;
+}
+.submenu {
+    display: none; /* 默认隐藏子菜单 */
+    position: absolute;
+    left: 100%; /* 将子菜单放在右侧 */
+    top: 0; /* 与父菜单项对齐 */
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 150px; /* 子菜单宽度 */
+    z-index: 1; /* 确保子菜单在其他元素上方 */
+}
+.dropdown-submenu >.dropdown-menu {
+    top: 0; /* 子菜单位置相对父菜单 **/
+    left: 100%; /* 相对于父菜单向右展开 */
+}
+
+/* 显示子菜单图标 */
+.dropdown-submenu:hover >.dropdown-menu {
+    display: block;
+}
+/* 当图标状态改变时*/
+ .dropdown-submenu a {
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.arrow {
+    margin-top: -2px; /* 调整垂直位置 */
+    margin-left: 2px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle; /* 确保垂直居中 */
+     margin-left: 30px; /* 调整箭头与文字之间的间距 */
+    border-top: 4px solid transparent; /* 修改为透明以指向右 */
+    border-bottom: 4px solid transparent; /* 同上 */
+    border-left: 4px solid #000; /* 左边框为黑色，形成箭头 */
+    border-right: 4px solid transparent; /* 右边框保持透明 */
+    content: "";
+}
+.grid-container:after{
+    clear: both;
+}
+.grid-container:after{
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}

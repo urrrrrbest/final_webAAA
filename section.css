@@ -1,0 +1,157 @@
+/*body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+*/
+.content{
+    margin-top: 20px;
+    width: 100%;
+    height: 1600px;
+}
+
+.section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    padding: 50px 0 100px 0;
+    margin: 0;
+}
+
+
+/* 左侧布局 */
+.left-section .item img {
+    max-width: 100%; /* 使图片占据父容器的最大宽度 */
+    height: 400px
+}
+
+.left-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    float:left;
+}
+
+
+.left-section .row {
+    display: flex;
+    flex: 1;
+}
+
+.left-section .item {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* 右侧布局 */
+.top-row {
+    display: flex; /* 使用flex布局，使内容水平排列 */
+    align-items: center; /* 垂直居中对齐 */
+    font-size: 20px; /* 字体大小 */
+    font-weight: bold; /* 粗体 */
+    margin-bottom: 15px; /* 下边距 */
+}
+
+.top-row span {
+    margin-right: 20px; /* 新增模块的间距 */
+    background-color: #005080; /* 背景 */
+    color: white; /* 字体颜色为白色 */
+    padding: 10px 15px; /* 内边距 */
+    border-radius: 5px; /* 添加圆角 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+.top-row span:hover {
+    background-color: #005080; /* 悬停时背景颜色变化 */
+}
+.right-section {
+    float: right;
+    width: 32%; /* 右侧区域宽度 */
+    background-color: white; /* 背景颜色 */
+    padding: 20px; /* 内边距 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.top-row {
+    font-size: 20px; /* 字体大小 */
+    font-weight: bold; /* 粗体 */
+    margin-bottom: 15px; /* 下边距 */
+}
+
+/* 列表布局 */
+.list-layout {
+    margin-top: 10px; /* 上边距 */
+}
+
+/* 每个通知框 */
+.notice-box {
+    
+    display: flex; /* 使用 flexbox 布局 */
+    padding: 10px; /* 内边距 */
+    border: 1px solid #ddd; /* 边框 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+}
+
+/* 鼠标悬停效果 */
+.notice-box:hover {
+    background-color: #f0f0f0; /* 悬停时背景颜色变化 */
+}
+
+/* 日期模块 */
+.date {
+    background-color: #003366; /* 深蓝色 */
+    color: white; /* 文字颜色 */
+    padding: 10px; /* 内边距 */
+    margin-right: 15px; /* 与标题之间的间距 */
+    display: flex; /* 使用 flexb使用 flexbox 布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center; /* 内容水平居中 */
+    justify-content: center; /* 内容垂直居中 */
+    min-width: 50px; /* 最小宽度 */
+}
+
+/* 日期部分的月份与年份 */
+.month {
+    font-size: 20px; /* 字体大小 */
+}
+
+.year {
+    font-size: 18px; /* 字体大小 */
+    margin-top: 2px; /* 上边距 */
+}
+
+/* 标题 */
+.title {
+    flex-grow: 1; /* 让标题占据剩余空间 */
+    text-align: center; /* 左对齐 */
+}
+
+.title a {
+    text-decoration: none; /* 无下划线 */
+    color: #003366; /* 设置文字颜色 */
+    border-radius: 5px; /* 添加圆角边框 */
+}
+
+
+/* 查看其他链接样式 */
+.right-section a:last-child {
+    display: block; /* 块级显示 */
+    margin-top: 20px; /* 顶部间距 */
+    text-align: center; /* 居中对齐 */
+    color:#003366;
+    ; /* 文字颜色 */
+    font-weight: bold; /* 粗体 */
+}
+/* 超链接悬停效果 */
+
+/* 清除浮动 */
+.clear {
+    clear: both; /* 清除浮动 */
+}
